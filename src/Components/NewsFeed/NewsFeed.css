@@ -1,0 +1,27 @@
+.news-feed {
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.4;
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+/*hide scroll bar*/
+.news-feed::-webkit-scrollbar{
+    display: none;
+}
+.news-feed{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.feed-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+    z-index: 100;
+}
+
+.feed-header>h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
