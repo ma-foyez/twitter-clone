@@ -1,0 +1,102 @@
+.login {
+    color: white;
+}
+
+.twitter-left {
+    background-color: rgb(122, 204, 254);
+    overflow: hidden;
+    height: 70vh;
+    padding: 20px;
+}
+
+.tweet-service {
+    justify-content: center;
+    position: relative;
+    z-index: 99;
+    transform: translate(15%, 80%);
+}
+
+.r-13gxpu9 {
+    color: rgba(29, 161, 242, 1.00);
+    position: absolute;
+    right: -60vh;
+    top: -30vh;
+    z-index: 11;
+}
+
+.r-yyyyoo {
+    fill: currentcolor;
+}
+
+.log-title {
+    font-weight: bold;
+}
+
+.log-title>.MuiSvgIcon-root {
+    margin-right: 10px;
+}
+
+.tweet-text {
+    margin-left: 16%;
+}
+
+.twitter {
+    font-size: 50px!important;
+}
+.account{
+    transition: color 500ms ease-out;
+    cursor: pointer;
+}
+.account:hover {
+    color: rgba(29, 161, 242, 1.00);
+}
+
+.form {
+    width: 70%;
+    margin-left: 15%;
+}
+.form-control{
+    border-radius: 30px!important;
+}
+
+.signup-btn {
+    background-color: var(--twitter-color)!important;
+    color: white!important;
+    font-weight: 900!important;
+    width: 100%;
+    border-radius: 30px!important;
+    outline-style: none!important;
+}
+
+.google-btn {
+    color: var(--twitter-color)!important;
+    border: 1px solid var(--twitter-color)!important;
+    font-weight: 900!important;
+    width: 70%;
+    border-radius: 30px!important;
+    outline-style: none!important;
+}
+
+.google-btn:hover {
+    background-color: var(--twitter-background)!important;
+}
+
+.google {
+    font-size: 32px!important;
+    margin-right: 20px;
+    color: white;
+}
+
+.footer {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.footer .nav-link {
+    color: lightgray;
+}

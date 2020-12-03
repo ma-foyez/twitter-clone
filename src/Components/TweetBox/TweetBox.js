@@ -1,6 +1,6 @@
 import { Button, Avatar } from '@material-ui/core';
 import React, { useState } from 'react';
-import db from '../../Firebase';
+import db from '../../DB';
 import './TweetBox.css'
 const TweetBox = () => {
     const [tweetMessage, setTweetMessage] = useState("");
@@ -8,6 +8,7 @@ const TweetBox = () => {
 
     const sendTweet = e => {
         e.preventDefault();
+        
         db.collection('posts').add({
             displayName: "M.A Fayez",
             username: "ma-fayez",
@@ -16,8 +17,8 @@ const TweetBox = () => {
             image: tweetImage,
             avatar: "https://scontent.fcgp3-1.fna.fbcdn.net/v/t1.0-9/122789363_395753984777916_5393512747691649159_o.jpg?_nc_cat=107&ccb=2&_nc_sid=09cbfe&_nc_ohc=PX_pyfhA4rkAX-rSX7i&_nc_ht=scontent.fcgp3-1.fna&oh=0dadfa97aea966530478f1e6beb51dac&oe=5FE889D8"
         })
-      setTweetMessage("");
-      setTweetImage("");
+        setTweetMessage("");
+        setTweetImage("");
     }
     return (
         <div className="TweetBox">

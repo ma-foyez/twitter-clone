@@ -1,18 +1,35 @@
-.Sidebar{
-   border-right: 1px solid var(--twitter-background);
-   flex: 0.3;
-   min-width: 200px;
+.Sidebar {
+   /* border-right: 1px solid var(--twitter-background); */
    margin-top: 20px;
    padding-left: 20px;
    padding-right: 20px;
 }
-.sidebar-twitterIcon{
+
+.active {
    color: var(--twitter-color)!important;
-   font-size: 30px!important;
+}
+
+.sidebar-twitterIcon {
+   font-size: 40px!important;
    margin-left: 20px;
    margin-bottom: 20px;
+   color: white;
 }
-.sidebar-tweet{
+
+.twiest {
+   background-color: var(--twitter-color)!important;
+   border: none!important;
+   font-size: 70px!important;
+   padding: 15px!important;
+   color: white!important;
+   font-weight: 900!important;
+   text-transform: inherit!important;
+   border-radius: 50%!important;
+   margin-top: 20px!important;
+   outline-style: none!important;
+}
+
+.sidebar-tweet {
    background-color: var(--twitter-color)!important;
    border: none!important;
    color: white!important;
@@ -22,5 +39,53 @@
    border-radius: 30px!important;
    margin-top: 20px!important;
    width: 100%!important;
-
+   outline-style: none!important;
+}
+.profile{
+   color: white!important;
+   width: 100%!important;
+}
+.dropdown-menu.show {
+   display: block;
+   width: 100%;
+   background-color: #15202b;
+   border: 1px solid var(--twitter-background);
+   
+}
+.dropdown-item{
+   color: white!important;
+   border-bottom: 1px solid var(--twitter-background);
+}
+.dropdown-item {
+   display: block;
+   color: white!important;
+   border-bottom: 1px solid var(--twitter-background);
+   width: 100%;
+   padding: .25rem 1.5rem;
+   clear: both;
+   font-weight: 400;
+   text-align: inherit;
+   white-space: nowrap;
+   border-bottom: 1px solid var(--twitter-background)!important;
+}
+.dropdown-item:nth-last-child(){
+   border-bottom: none!important;
+}
+.dropdown-item:hover{
+   background-color: #1445756e!important;
+}
+.nav-link{
+   color: white!important;
+   font-weight: 900!important;
+}
+.logout-btn {
+   color: var(--twitter-color)!important;
+   border: 1px solid var(--twitter-color)!important;
+   font-weight: 900!important;
+   width: 100%;
+   border-radius: 30px!important;
+   outline-style: none!important;
+}
+.side-btn{
+   cursor: pointer;
 }

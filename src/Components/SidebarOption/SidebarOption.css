@@ -1,22 +1,48 @@
-.Sidebar-option{
-    display: flex;
-    align-items: center;
+.sidebar-option {
     cursor: pointer;
+    color: white;
+    display: none;
 }
-.Sidebar-option:hover{
-    background-color: #e8f5fe;
+.active .sidebar-option{
+    color: var(--twitter-color)!important;
+}
+.sidebar-option:hover {
+    background-color: #2876c334;
+    color: var(--twitter-color)!important;
     border-radius: 30px;
-    color: var(--twitter-color);
     transition: color 100ms ease-out;
 }
-.Sidebar-option > .MuiSvgIcon-root{
-    padding: 15px;
+
+.sidebar-option>.MuiSvgIcon-root {
+    margin: 15px;
+    font-size: 30px;
+    background: none;
+    text-align: center;
+    border-radius: 50%!important;
 }
-.Sidebar-option > h2{
-    font-size: 20px;
-    font-weight: 800;
-    margin-right: 20px;
+
+/*small device*/
+
+.only-icon {
+    cursor: pointer;
+    color: white;
+    display: none;
+    height: 60px!important;
+    width: 60px;
 }
-.sidebar-option-active{
-    color: var(--twitter-color);
+.active .only-icon{
+    color: var(--twitter-color)!important;
+}
+.only-icon:hover {
+    background-color: #2876c334;
+    color: var(--twitter-color)!important;
+    border-radius: 50%;
+    transition: color 100ms ease-out;
+}
+
+.only-icon>.MuiSvgIcon-root {
+    margin: 15px;
+    background: none;
+    text-align: center;
+    border-radius: 50%!important;
 }

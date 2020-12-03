@@ -1,12 +1,22 @@
-body{
-  --twitter-color: #50b7f5;
-  --twitter-background: #e6ecf0;
+* {
+  text-decoration: none!important;
+  background: none;
 }
-.App{
-  display: flex;
-  height: 100vh;
-  max-width: 1300px;
+
+body {
+  --twitter-color: #50b7f5;
+  --twitter-background: #2d4d69;
+}
+
+.set-bg {
+  background-color: #15202b;
+}
+
+.App {
+  /* display: flex; */
+  /* height: 100vh; */
+  /* max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px;
+  padding: 0 10px; */
 }

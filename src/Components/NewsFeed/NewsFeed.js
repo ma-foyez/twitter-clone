@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import db from '../../Firebase';
+import db from '../../DB';
 import Post from '../Post/Post';
 import TweetBox from '../TweetBox/TweetBox';
 import './NewsFeed.css'
+import FlipMove from 'react-flip-move';
+
 const NewsFeed = () => {
     const [posts, setPosts] = useState([]);
 
@@ -17,18 +19,19 @@ const NewsFeed = () => {
                 <h2>Home</h2>
             </div>
             <TweetBox />
-            {
-                posts.map(post => (
-                    <Post
-                        displayName={post.displayName}
-                        username={post.username}
-                        verified={true}
-                        text={post.text}
-                        image={post.image}
-                        avatar={post.avatar} />
-                ))
-            }
-
+            <FlipMove>
+                {
+                    posts.map(post => (
+                        <Post
+                            displayName={post.displayName}
+                            username={post.username}
+                            verified={true}
+                            text={post.text}
+                            image={post.image}
+                            avatar={post.avatar} />
+                    ))
+                }
+            </FlipMove>
         </div>
     );
 };
